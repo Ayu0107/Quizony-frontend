@@ -1,5 +1,7 @@
 /* CSS style sheet */
 
+/* Universal Styling */
+
 *{
     margin: 0px;
     padding: 0px;
@@ -13,14 +15,39 @@ html{
     font-size: 10px;
 }
 
-.notLink{
-    color: black;
-}
+/* Active link */
 
 .current{
     background-color: rgba(211, 211, 211, 0.514);
     font-weight: bold;
 }
+
+/* Scroll class of web page below navbar below 600px */
+
+.scroll{
+    display: none;
+    margin: 4px, 4px;
+    padding: 4px;
+    color: black;
+    font-size: 2rem;
+    width: 48rem;
+    overflow: auto;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scroll a{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 1.4rem;
+    text-decoration: none;
+    border: solid lightgrey 1px;
+    border-collapse: collapse;
+}
+
+/* Navbar for pc */
 
 #navbar{
     position: fixed;
@@ -31,6 +58,8 @@ html{
     width: 100%;
     z-index: 1000;
 }
+
+/* navbar for mobile and tablet */
 
 #mobnavbar{
     display: none;
@@ -43,38 +72,18 @@ html{
     z-index: 1000;
 }
 
+/* Logo in navbar */
 
 #logo{
     width: 12rem;
 }
 
+/* grid for navbar */
+
 .grid-container-navbar{
     display: grid;
-    /* grid-template-columns: 1fr 1fr 8fr 2fr 1fr; */
     grid-template-areas: 
     'blanknav1 logonav navlink navlink navlink navlink navlink navlink navlink navlink sidelink sidelink blanknav2';
-}
-
-#blanknav1{
-    grid-area: blanknav1;
-    margin: 0rem 4rem 0rem 4rem;
-}
-
-#logonav{
-    grid-area: logonav;
-}
-
-#navlink{
-    grid-area: navlink;
-}
-
-#sidelink{
-    grid-area: sidelink;
-}
-
-#blanknav2{
-    grid-area: blanknav2;
-    margin: 0rem 3rem 0rem 3rem;
 }
 
 .grid-item{
@@ -106,8 +115,23 @@ html{
     color: black;
 }
 
-.nav-item a i:hover{
-    color: black;
+/* first part of navbar grid blank */
+
+#blanknav1{
+    grid-area: blanknav1;
+    margin: 0rem 4rem 0rem 4rem;
+}
+
+/* second part of navbar grid logo */
+
+#logonav{
+    grid-area: logonav;
+}
+
+/* third part of navbar grid links */
+
+#navlink{
+    grid-area: navlink;
 }
 
 .dropdown{
@@ -180,9 +204,8 @@ html{
     background-color: #ddd;
 }
 
-.responavbar{
-    /* overflow: hidden; */
-    background-color: rgba(240, 236, 236, 0.76);
+.nav-item a i:hover{
+    color: black;
 }
 
 .searchIcon{
@@ -190,31 +213,42 @@ html{
     padding-left: 1rem
 }
 
-.responavbar .icon{
-    display: none;
+/* fourth part of navbar grid sidelinks-signup and login */
+
+#sidelink{
+    grid-area: sidelink;
 }
 
-.navbar-toggle {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 24px;
+/* fifth part of navbar grid - blank */
+
+#blanknav2{
+    grid-area: blanknav2;
+    margin: 0rem 3rem 0rem 3rem;
 }
 
-.active {
-    display: block;
-}
+/* Main section of webpage - grid template */
 
 .grid-container-section{
     display: grid;
     margin-top: 1rem;
-    /* grid-template-columns: 1fr 4fr 2fr 1fr; */
     grid-template-areas: 
     'blank1 maincontainer maincontainer maincontainer maincontainer sidecol sidecol blank2';
-    /* 'footer footer footer footer footer footer footer footer'; */
 }
+
+/* First part of grid - blank column */
+
+#blank1{
+    grid-area: blank1;
+    margin: 9rem;
+}
+
+/* Second part of grid - main column with cards */
+
+#middle-grid{
+    grid-area: maincontainer;
+}
+
+/* Heading of second column - Quizzes for women */
 
 #heading{
     margin-top: 7rem;
@@ -222,58 +256,10 @@ html{
     font-size: 5rem;
 }
 
-#blank1{
-    grid-area: blank1;
-    margin: 9rem;
-}
-
-#middle-grid{
-    grid-area: maincontainer;
-}
-
-#sidecol{
-    grid-area: sidecol;
-}
-
-#blank2{
-    grid-area: blank2;
-    margin: 9rem;
-}
-
-.mobnavbar{
-    display: none;
-}
-
-footer{
-    grid-area: footer;
-}
-
-.scroll{
-    display: none;
-    margin: 4px, 4px;
-    padding: 4px;
-    color: black;
-    font-size: 2rem;
-    width: 48rem;
-    overflow: auto;
-    white-space: nowrap;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.scroll a{
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 1.4rem;
-    text-decoration: none;
-    border: solid lightgrey 1px;
-    border-collapse: collapse;
-}
+/* Inner grid of second part of main grid */
 
 .grid-container-inner{
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-areas: 'card card';
 }
 
@@ -283,7 +269,6 @@ footer{
     margin: 2rem 5rem 0rem 0rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 90%;
-    /* padding-top: 100%; */
 }
 
 .card-img{
@@ -340,6 +325,22 @@ footer{
     font-size: 1.5rem;
 }
 
+/* Third part of grid - side column */
+
+#sidecol{
+    grid-area: sidecol;
+}
+
+/* Sub headings of third column of main grid */
+
+.sub-heading{
+    font-size: 3rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+/* Tables layout on top of third column of main grid  */
+
 #contentTable{
     padding: 1rem;
     margin: 12rem 2rem 0rem 0rem;
@@ -366,6 +367,8 @@ tr{
     height: 1rem;
 }
 
+/* table on top of third col of main grid - heading and entries*/
+
 .heading{
     border-bottom: solid 2px black;
     background-color: lightgrey;
@@ -383,17 +386,12 @@ tr{
     background-color: lightgrey;
 }
 
-.sub-heading{
-    font-size: 3rem;
-    padding: 2rem;
-    margin-top: 2rem;
-}
+/* Category table, story genres and popular tags in third col of main grid */
 
 .categoriesTable{
     display: flex;
     flex-wrap: wrap;
     font-size: 2rem;
-    /* border: solid 1px black; */
 }
 
 .categoriesTable a{
@@ -408,6 +406,8 @@ tr{
 .categoriesTable a:hover{
     background-color: lightgrey;
 }
+
+/* Card of top quizzes in third col of main grid */
 
 .card-grid{
     display: grid;
@@ -433,6 +433,8 @@ tr{
     padding-left: 1rem;
 }
 
+/* Create quiz button in third col of main grid  */
+
 .create-quiz{
     background-color: rgb(40, 173, 40);
     border: none;
@@ -448,6 +450,19 @@ tr{
     background-color: green;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     
+}
+
+/* Fourth part of grid - blank column */
+
+#blank2{
+    grid-area: blank2;
+    margin: 9rem;
+}
+
+/* Footer of webpage */
+
+footer{
+    grid-area: footer;
 }
 
 footer{
@@ -488,7 +503,9 @@ footer{
     font-size: 1.5rem;
 }
 
-@media screen and (min-width: 1300px) and (max-width:1400px){
+/* media queries for 1200 px - 1400 px - reducing blank col width */
+
+@media screen and (min-width: 1200px) and (max-width:1400px){
     #blanknav1{
         grid-area: blanknav1;
         margin: 0rem 2rem 0rem 2rem;
@@ -507,6 +524,8 @@ footer{
         margin: 6rem;
     }
 }
+
+/* media queries for 992 px - 1200 px - reducing blank col width and moving month from bottom to top of the card*/
 
 @media screen and (min-width: 992px) and (max-width:1200px){
     #blanknav1{
@@ -539,6 +558,7 @@ footer{
     }
 }
 
+/* media queries till 991px - changing margins */
 
 @media screen and (max-width:991px){
     .grid-container-section{
@@ -586,7 +606,6 @@ footer{
         font-size: 2rem;
         margin-left: 12rem;
         margin-right: 12rem;
-        /* border: solid 1px black; */
     }
 
     .card-grid{
@@ -597,6 +616,8 @@ footer{
         margin-right: 12rem;
     }
 }
+
+/* media queries for 900px - changing width of blank cols */
 
 @media screen and (max-width: 900px){
     #blanknav1{
@@ -617,6 +638,8 @@ footer{
         margin: 0rem;
     }
 }
+
+/* media queires for 780px - adding collapsing navbar */
 
 @media screen and (max-width: 780px) {
     #navbar{
@@ -680,10 +703,10 @@ footer{
     .dropdown-link{
         text-align: center;
     }
-    
-    
+        
     .dropdown-hover-link{
         position: relative;
+        display: block;
     }
     
     .dropdown-hover-link:hover .dropdown-content{
@@ -699,9 +722,19 @@ footer{
     .topnav a:hover{
         color: black;
         background-color: lightgrey;
-      }
-    
+      }  
 }
+
+/* media queries for 700px - changing card footer */
+
+@media screen and (max-width:700px){
+    .card-footer i{
+        padding: 0rem 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* media queries for 600px - adding scroll on top, changing cardfooter and heading */
 
 @media screen and (max-width:600px) {
     .scroll{
@@ -714,7 +747,14 @@ footer{
         margin-bottom: 2rem;
         font-size: 5rem;
     }
+
+    .card-footer i{
+        padding: 0rem 0.5rem;
+        font-size: 1.1rem;
+    }
 }
+
+/* media queries for 500px - getting one card in grid */
 
 @media screen and (max-width:500px){
     .grid-container-inner{
@@ -729,6 +769,11 @@ footer{
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         width: 90%;
         /* padding-top: 100%; */
+    }
+
+    .card-footer i{
+        padding: 0rem 0.8rem;
+        font-size: 1.5rem;
     }
 
     .scroll{
@@ -751,6 +796,8 @@ footer{
         font-size:4rem;
     }
 }
+
+/* media queries for 350px - getting date from top to bottom on card */
 
 @media screen and (max-width:350px){
     .text-atbottom{
