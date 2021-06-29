@@ -209,7 +209,7 @@ html{
 
 .grid-container-section{
     display: grid;
-    margin-top: 5rem;
+    margin-top: 1rem;
     /* grid-template-columns: 1fr 4fr 2fr 1fr; */
     grid-template-areas: 
     'blank1 maincontainer maincontainer maincontainer maincontainer sidecol sidecol blank2';
@@ -217,7 +217,8 @@ html{
 }
 
 #heading{
-    margin: 2rem;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
     font-size: 5rem;
 }
 
