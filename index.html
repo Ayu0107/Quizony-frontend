@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS FILE -->
+    <script src="script.js"></script>
+
+    <title>Quizony</title>
+</head>
+
+<body>
+    <nav id="navbar" class="grid-container-navbar responavbar">
+        <div class="grid-item" id="blanknav1"></div>
+        <div class="grid-item" id="logonav">
+            <a href="#">
+                <img src="quizony_logo.png" alt="logo" id="logo">
+            </a>
+        </div>
+
+        <!-- <div class="responavlink">
+            <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+              </div>
+        </div> -->
+
+        <div class="grid-item nav-flex" id="navlink">
+            <div class="dropdown responavlink">
+                <button class="dropdown-button">Categories</button>
+                <div class="dropdown-content">
+                    <div class="dropdown-grid">
+                        <div class="dropdown-grid-item">
+                            <p class="dropdown-heading"><b>Quizzes</b></p>
+                            <a href="#">All</a>
+                            <a href="#">Top</a>
+                            <a href="#">Women</a>
+                            <a href="#">Couple</a>
+                            <a href="#">Trivia</a>
+                            <a href="#">Sport</a>
+                            <a href="#">Music</a>
+
+                            <p class="dropdown-heading"><b>Popular Tags</b></p>
+                            <a href="#">Girls</a>
+                            <a href="#">Love</a>
+                            <a href="#">Friends</a>
+                            <a href="#">Fun</a>
+                            <a href="#">Lifestyle</a>
+                            <a href="#">Food</a>
+                        </div>
+                        <div class="dropdown-grid-item">
+                            <p class="dropdown-heading"><b>Stories</b></p>
+                            <a href="#">All</a>
+                            <a href="#">Horror</a>
+                            <a href="#">Action</a>
+                            <a href="#">Poetry</a>
+                            <a href="#">Fantasy</a>
+                            <a href="#">Romance</a>
+                            <a href="#">Adventure</a>
+                            <a href="#">Humor</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item nav-flex">
+                <div class="dropdown responavlink">
+                    <button class="dropdown-button">Create</button>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item-create">
+                            <a href="#">Create Quiz</a>
+                            <a href="#">Create Stories</a>
+                            <a href="#">How it works</a>
+                            <a href="#">Contact</a>
+                            <a href="#">FAQ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="responavlink">
+                <a href="#" class="nav-item">
+                    <li>Waiting Room</li>
+                </a>
+            </div>
+
+            <div class="respnavlink">
+                <a href="#" class="nav-item responavlink">
+                    <li>Our Stories</li>
+                </a>
+            </div>
+            <!-- <div id="searchBox nav-item"> -->
+            <!-- <input type="text" class="searchInput" name="" placeholder="Enter the text..."> -->
+            <div class="responavlink">
+                <a class="searchButton nav-item" href="#">
+                    <i class="fas fa-search nav-item searchIcon"></i>
+                </a>
+            </div>
+            <!-- </div> -->
+        </div>
+        <div class="grid-item nav-flex responavlink" id="sidelink">
+            <a href="#" class="nav-item">
+                <li>SignUp</li>
+            </a>
+            <a href="#" class="nav-item">
+                <li>Login</li>
+            </a>
+        </div>
+        
+        <div class="responavlink">
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        
+        <div class="grid-item" id="blanknav2">
+            <!-- <div class="icon menu-btn">
+                <i class="fas fa-bars">m</i>
+            </div> -->
+        </div>
+    </nav>
+
+    <section class="grid-container-section">
+
+        <div class="grid-item" id="blank1"></div>
+
+        <div class="grid-item" id="middle-grid">
+
+            <h1 id="heading">Quizzes for Women</h1>
+
+            <!-- creating inner grid -->
+
+            <div class="grid-container-inner">
+
+                <!-- first card inside inner grid -->
+                <div class="grid-item">
+
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+
+                        <!-- image of card -->
+
+                        <div class="card-img">
+                            <img src="yoga.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">2 months ago</p>
+                        </div>
+
+                        <!-- content of card -->
+
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+
+                        <!-- footer of card -->
+
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up" aria-hidden="true"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- second card inside inner grid -->
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="bluescarf.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">2 months ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="color.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">4 months ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="cycle.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">5 months ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="pinkscarf.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">5 months ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="girl.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">8 months ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="hats.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">8 months ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="athlete.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">8 months ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="mountain.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">8 months ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="makeup.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">10 months ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="weddin.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">11 months ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="cyclewedding.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">1 year ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="sad.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">1 year ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="tomboy.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">1 year ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="fashion.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">2 years ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="friends.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">2 years ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="age.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">2 years ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="lilgirl.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">2 years ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="eyeliner.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">2 years ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="lolipop.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">3 years ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="bold.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">3 years ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="card" onclick="location.href='#';" style="cursor:pointer;">
+                        <div class="card-img">
+                            <img src="whitedress.jpg" alt="Avatar" style="width:100%">
+                            <p class="text-ontop">Quiz</p>
+                            <p class="text-atbottom">4 years ago</p>
+                        </div>
+                        <div class="container">
+                            <h3><b>Lorem ipsum dolor sit</b></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsam tenetur a
+                                laborum nihil cupiditate!</p>
+                        </div>
+                        <div class="card-footer">
+                            <i class="fas fa-th-list"> 95 </i>
+                            <i class="fas fa-eye"> 107045 </i>
+                            <i class="far fa-thumbs-up"> 5202 </i>
+                            <i class="fas fa-user"> Jenn </i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- closing inner grid -->
+            </div>
+
+        </div>
+
+        <!-- third column of main grid -->
+
+        <div class="grid-item" id="sidecol">
+
+            <!-- creaing table inside third column -->
+            <table id="contentTable">
+                <tr>
+                    <th class="heading"> <a href="#"> All </a> </th>
+                </tr>
+                <tr>
+                    <td class="entries"> <a href="#"> Quizzes </a> </td>
+                </tr>
+                <tr>
+                    <td class="entries"> <a href="#"> Stories </a> </td>
+                </tr>
+                <tr>
+                    <td class="entries"> <a href="#"> Top Quizzes </a> </td>
+                </tr>
+                <tr>
+                    <td class="entries"> <a href="#"> Waiting Room </a> </td>
+                </tr>
+            </table>
+
+            <div>
+                <h2 class="sub-heading">Quiz Categories</h2>
+                <div class="categoriesTable">
+                    <a href="#">Men</a>
+                    <a href="#" class="current">Women</a>
+                    <a href="#">Couples</a>
+                    <a href="#">Kids</a>
+                    <a href="#">Living</a>
+                    <a href="#">Personality</a>
+                    <a href="#">Hobby</a>
+                    <a href="#">Accessories</a>
+                    <a href="#">Relationship</a>
+                    <a href="#">Politics</a>
+                    <a href="#">History</a>
+                    <a href="#">Sports</a>
+                    <a href="#">Science</a>
+                    <a href="#">Technology</a>
+                    <a href="#">Carrer</a>
+                    <a href="#">Education</a>
+                    <a href="#">Countries</a>
+                    <a href="#">Flags</a>
+                    <a href="#">Colors</a>
+                    <a href="#">Entertainment</a>
+                    <a href="#">Environment</a>
+                    <a href="#">Music</a>
+                    <a href="#">Dance</a>
+                    <a href="#">Philosophy</a>
+                    <a href="#">Painting</a>
+                    <a href="#">Others</a>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="sub-heading"> Top Quizzes</h2>
+
+                <div class="card-grid" onclick="location.href='#';" style="cursor:pointer;">
+                    <div class="grid-item">
+                        <img src="food.jpg" alt=".">
+                    </div>
+                    <div class="grid-item">
+                        <p>What should you eat tonight?</p>
+                    </div>
+                </div>
+
+                <div class="card-grid" onclick="location.href='#';" style="cursor:pointer;">
+                    <div class="grid-item">
+                        <img src="old.jpg" alt=".">
+                    </div>
+                    <div class="grid-item">
+                        <p>How old am I?</p>
+                    </div>
+                </div>
+
+                <div class="card-grid" onclick="location.href='#';" style="cursor:pointer;">
+                    <div class="grid-item">
+                        <img src="movie.jpg" alt=".">
+                    </div>
+
+                    <div class="grid-item">
+                        <p>What movie should you watch next?</p>
+                    </div>
+                </div>
+
+                <div class="card-grid onclick=" location.href='#' ;" style="cursor:pointer;"">
+                    <div class=" grid-item">
+                    <img src="top_bottom.jpg" alt=".">
+                </div>
+
+                <div class="grid-item">
+                    <p>Are you a top or a bottom?</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="sub-heading">Story Genres</h2>
+            <div class="categoriesTable">
+                <a href="#">Action</a>
+                <a href="#">Adventure</a>
+                <a href="#">Romance</a>
+                <a href="#">Long </a>
+                <a href="#">Historical</a>
+                <a href="#">Horror</a>
+                <a href="#">Humour</a>
+                <a href="#">Mystery</a>
+                <a href="#">Nonfiction</a>
+                <a href="#">Poetry</a>
+                <a href="#">Realistic</a>
+                <a href="#">Fantasy</a>
+                <a href="#">Fanfiction</a>
+                <a href="#">Thriller</a>
+                <a href="#">Challenge</a>
+                <a href="#">Countries</a>
+                <a href="#">Science fiction</a>
+                <a href="#">Short stories</a>
+            </div>
+        </div>
+
+        <div class="sub-heading ">
+            <button class="create-quiz">Create Quiz</button>
+        </div>
+
+        <div>
+            <h2 class="sub-heading">Popular Tags</h2>
+            <div class="categoriesTable">
+                <a href="#">Girls</a>
+                <a href="#">Friends</a>
+                <a href="#">Fun</a>
+                <a href="#">Teens</a>
+                <a href="#">Love</a>
+                <a href="#">Personality</a>
+                <a href="#">Food</a>
+                <a href="#">History</a>
+                <a href="#">Name</a>
+                <a href="#">Generator</a>
+                <a href="#">Character</a>
+                <a href="#">Lifestyle</a>
+                <a href="#">Religion</a>
+                <a href="#">Music</a>
+                <a href="#">Style</a>
+                <a href="#">Animals</a>
+                <a href="#">Knowledge</a>
+                <a href="#">Pets</a>
+                <a href="#">Tradition</a>
+                <a href="#">Life</a>
+                <a href="#">Literature</a>
+                <a href="#">Fashion</a>
+                <a href="#">Family</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="grid-item" id="blank2"></div>
+
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="grid-item"></div>
+
+            <div class="grid item">
+                <div class="footer-links">
+                    <a href="#">Home</a>
+                    |
+                    <a href="#">Advertise</a>
+                    |
+                    <a href="#">Contact</a>
+                    |
+                    <a href="#">About</a>
+                    |
+                    <a href="#">Privacy policy</a>
+                    |
+                    <a href="#">Cookie Policy</a>
+                </div>
+                <div class="copyright-link">
+                    <a href="#">quizony.com </a>
+                    <i class="far fa-copyright">
+                        <span>2021. All Rights Reserved.</span> 
+                    </i>
+                </div>
+            </div>
+
+            <div class="grid-item"></div>
+        </div>
+    </footer>
+</body>
+
+</html>
