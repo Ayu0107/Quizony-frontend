@@ -254,9 +254,11 @@ footer{
     padding: 4px;
     color: black;
     font-size: 2rem;
-    width: 55rem;
+    width: 48rem;
     overflow: auto;
     white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .scroll a{
@@ -271,10 +273,12 @@ footer{
 
 .grid-container-inner{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-areas: 'card card';
 }
 
 .card {
+    grid-area: card;
     position: relative;
     margin: 2rem 5rem 0rem 0rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -705,5 +709,61 @@ footer{
 @media screen and (max-width:600px) {
     .scroll{
         display: block;
+        margin-top: 7rem;
+    }
+    
+    #heading{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    .grid-container-inner{
+        display: grid;
+        grid-template-areas: 'card';
+    }
+
+    .card {
+        grid-area: card;
+        position: relative;
+        margin: 2rem 2rem 0rem 0rem;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        width: 90%;
+        /* padding-top: 100%; */
+    }
+
+    .scroll{
+        display: block;
+        margin-top: 7rem;
+        width: 40rem;
+        margin: 0.4rem, 0.4rem;
+        padding: 4px;
+        color: black;
+        font-size: 2rem;
+        overflow: auto;
+        white-space: nowrap;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+
+    #heading{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-size:4rem;
+    }
+}
+
+@media screen and (max-width:350px){
+    .text-atbottom{
+        position: absolute;
+        bottom: 0.3rem;
+        top: auto;
+        left: .5rem;
+        background-color: lightgrey;
+        color: black;
+        font-size: 1.5rem;
+        padding: .5rem 1rem;
     }
 }
