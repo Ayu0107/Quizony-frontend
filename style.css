@@ -622,6 +622,11 @@ footer{
     .icon i{
         font-size: 2rem;
         padding: 1rem;
+        color: grey;
+    }
+
+    .icon i:hover{
+        color: black;
     }
  
     .topnav.responsive a {
