@@ -695,13 +695,10 @@ footer{
         display: block;
         position: absolute;
     }
-    
-    .topnav div:hover{
-        color: black;
-      }
 
     .topnav a:hover{
         color: black;
+        background-color: lightgrey;
       }
     
 }
