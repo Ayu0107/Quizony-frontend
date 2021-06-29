@@ -19,24 +19,32 @@
 </head>
 
 <body>
-    <nav id="navbar" class="grid-container-navbar responavbar">
+
+    <!-- Navbar of page -->
+
+    <nav id="navbar" class="grid-container-navbar">
+
+        <!-- blank grid in navbar -->
+
         <div class="grid-item" id="blanknav1"></div>
+
+        <!-- logo in navbar -->
+
         <div class="grid-item" id="logonav">
             <a href="#">
                 <img src="quizony_logo.png" alt="logo" id="logo">
             </a>
         </div>
 
-        <!-- <div class="responavlink">
-            <div class="icon cancel-btn">
-                <i class="fas fa-times"></i>
-              </div>
-        </div> -->
+        <!-- main links of navbar -->
 
         <div class="grid-item nav-flex" id="navlink">
-            <div class="dropdown responavlink">
+            <div class="dropdown">
                 <button class="dropdown-button">Categories</button>
                 <div class="dropdown-content">
+
+                    <!-- dropdown grid starts -->
+
                     <div class="dropdown-grid">
                         <div class="dropdown-grid-item">
                             <p class="dropdown-heading"><b>Quizzes</b></p>
@@ -71,10 +79,15 @@
                 </div>
             </div>
 
+            <!-- second link of main links  -->
+
             <div class="grid-item nav-flex">
-                <div class="dropdown responavlink">
+                <div class="dropdown mobilelink">
                     <button class="dropdown-button">Create</button>
                     <div class="dropdown-content">
+
+                        <!-- dropdown of second link -->
+
                         <div class="dropdown-item-create">
                             <a href="#">Create Quiz</a>
                             <a href="#">Create Stories</a>
@@ -86,45 +99,122 @@
                 </div>
             </div>
 
-            <div class="responavlink">
-                <a href="#" class="nav-item">
-                    <li>Waiting Room</li>
-                </a>
+            <!-- third link of navbar main section -->
+
+            <div class="mobilelink nav-flex">
+                <li class="nav-item">
+                    <a href="#" >
+                        Waiting Room
+                    </a>
+                </li>
             </div>
 
-            <div class="respnavlink">
-                <a href="#" class="nav-item responavlink">
-                    <li>Our Stories</li>
-                </a>
+            <!-- fourth link of navbar main section -->
+
+            <div class="mobilelink nav-flex">
+                <li  class="nav-item">
+                    <a href="#">
+                        Our Stories
+                    </a>
+                </li>
             </div>
-            <!-- <div id="searchBox nav-item"> -->
-            <!-- <input type="text" class="searchInput" name="" placeholder="Enter the text..."> -->
-            <div class="responavlink">
+
+            <!-- search button in navbar main section -->
+
+            <div class="nav-item nav-flex">
                 <a class="searchButton nav-item" href="#">
                     <i class="fas fa-search nav-item searchIcon"></i>
                 </a>
             </div>
-            <!-- </div> -->
         </div>
-        <div class="grid-item nav-flex responavlink" id="sidelink">
-            <a href="#" class="nav-item">
-                <li>SignUp</li>
-            </a>
-            <a href="#" class="nav-item">
-                <li>Login</li>
-            </a>
+
+        <!-- Navbar signup and login link in the right -->
+
+        <div class="grid-item nav-flex mobilelink" id="sidelink">
+            <li  class="nav-item">
+                <a href="#">
+                    SignUp
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    Login
+                </a>
+            </li>
         </div>
-        
-        <div class="responavlink">
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-        
+
+        <!-- last blank column in navbar -->
+
         <div class="grid-item" id="blanknav2">
-            <!-- <div class="icon menu-btn">
-                <i class="fas fa-bars">m</i>
-            </div> -->
+            <a href="#" class="link-toggle align-right">
+                <i class="fas fa-bars"></i>
+            </a>
         </div>
     </nav>
+
+    <!-- navbar for mobile viewport -->
+
+    <nav id="mobnavbar">
+        <div class="topnav" id="myTopnav">
+            
+            <span id="logonav">
+                <a href="#">
+                    <img src="quizony_logo.png" alt="logo" id="logo">
+                </a>
+            </span>
+              
+            <!-- <div class="dropdown-hover-link"> -->
+            <a href="#" class="dropdown-link">Categories</a>
+                <div class="dropdown-content">
+
+                    <!-- dropdown grid starts -->
+
+                    <div class="dropdown-grid">
+                        <div class="dropdown-grid-item">
+                            <p class="dropdown-heading"><b>Quizzes</b></p>
+                            <a href="#">All</a>
+                            <a href="#">Top</a>
+                            <a href="#">Women</a>
+                            <a href="#">Couple</a>
+                            <a href="#">Trivia</a>
+                            <a href="#">Sport</a>
+                            <a href="#">Music</a>
+
+                            <p class="dropdown-heading"><b>Popular Tags</b></p>
+                            <a href="#">Girls</a>
+                            <a href="#">Love</a>
+                            <a href="#">Friends</a>
+                            <a href="#">Fun</a>
+                            <a href="#">Lifestyle</a>
+                            <a href="#">Food</a>
+                        </div>
+                        <div class="dropdown-grid-item">
+                            <p class="dropdown-heading"><b>Stories</b></p>
+                            <a href="#">All</a>
+                            <a href="#">Horror</a>
+                            <a href="#">Action</a>
+                            <a href="#">Poetry</a>
+                            <a href="#">Fantasy</a>
+                            <a href="#">Romance</a>
+                            <a href="#">Adventure</a>
+                            <a href="#">Humor</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+
+            <a href="#" class="dropdown-link">Create</a>
+            <a href="#" class="dropdown-link">Waiting Room</a>
+            <a href="#" class="dropdown-link">Our Story</a>
+            <a href="#" class="dropdown-link">Sign Up</a>
+            <a href="#" class="dropdown-link">Log In</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fas fa-bars"></i>
+            </a>
+          </div>
+    </nav>
+
+    <!-- Main section of the page -->
 
     <section class="grid-container-section">
 
@@ -174,6 +264,7 @@
 
 
                 <!-- second card inside inner grid -->
+
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
                         <div class="card-img">
@@ -194,6 +285,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- third card inside inner grid -->
 
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
@@ -216,6 +309,8 @@
                     </div>
                 </div>
 
+                <!-- fourth card inside inner grid -->
+
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
                         <div class="card-img">
@@ -236,6 +331,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 5th card inside inner grid -->
 
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
@@ -258,6 +355,8 @@
                     </div>
                 </div>
 
+                <!-- 6th card inside inner grid -->
+
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
                         <div class="card-img">
@@ -278,6 +377,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 7th card inside inner grid -->
 
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
@@ -300,6 +401,8 @@
                     </div>
                 </div>
 
+                <!-- 8th card inside inner grid -->
+
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
                         <div class="card-img">
@@ -320,6 +423,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 9th card inside inner grid -->
 
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
@@ -342,6 +447,8 @@
                     </div>
                 </div>
 
+                <!-- 10th card inside inner grid -->
+
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
                         <div class="card-img">
@@ -362,6 +469,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 11th card inside inner grid -->
 
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
@@ -384,6 +493,8 @@
                     </div>
                 </div>
 
+                <!-- 12th card inside inner grid -->
+
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
                         <div class="card-img">
@@ -404,6 +515,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 13th card inside inner grid -->
 
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
@@ -426,6 +539,8 @@
                     </div>
                 </div>
 
+                <!-- 14th card inside inner grid -->
+
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
                         <div class="card-img">
@@ -446,6 +561,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 15th card inside inner grid -->
 
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
@@ -468,6 +585,8 @@
                     </div>
                 </div>
 
+                <!-- 16th card inside inner grid -->
+
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
                         <div class="card-img">
@@ -488,6 +607,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 17th card inside inner grid -->
 
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
@@ -510,6 +631,8 @@
                     </div>
                 </div>
 
+                <!-- 18th card inside inner grid -->
+
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
                         <div class="card-img">
@@ -530,6 +653,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 19th card inside inner grid -->
 
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
@@ -552,6 +677,8 @@
                     </div>
                 </div>
 
+                <!-- 20th card inside inner grid -->
+
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
                         <div class="card-img">
@@ -573,6 +700,8 @@
                     </div>
                 </div>
 
+                <!-- 21st card inside inner grid -->
+
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
                         <div class="card-img">
@@ -593,6 +722,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 22nd card inside inner grid -->
 
                 <div class="grid-item">
                     <div class="card" onclick="location.href='#';" style="cursor:pointer;">
@@ -624,7 +755,8 @@
 
         <div class="grid-item" id="sidecol">
 
-            <!-- creaing table inside third column -->
+            <!-- creaing table inside third column for content -->
+
             <table id="contentTable">
                 <tr>
                     <th class="heading"> <a href="#"> All </a> </th>
@@ -643,8 +775,11 @@
                 </tr>
             </table>
 
+            <!-- creating a list of categories in third col -->
+
             <div>
                 <h2 class="sub-heading">Quiz Categories</h2>
+
                 <div class="categoriesTable">
                     <a href="#">Men</a>
                     <a href="#" class="current">Women</a>
@@ -675,8 +810,12 @@
                 </div>
             </div>
 
+            <!-- creating top quizzes list in third col -->
+
             <div>
                 <h2 class="sub-heading"> Top Quizzes</h2>
+
+                <!-- first quiz -->
 
                 <div class="card-grid" onclick="location.href='#';" style="cursor:pointer;">
                     <div class="grid-item">
@@ -687,6 +826,8 @@
                     </div>
                 </div>
 
+                <!-- second quiz -->
+
                 <div class="card-grid" onclick="location.href='#';" style="cursor:pointer;">
                     <div class="grid-item">
                         <img src="old.jpg" alt=".">
@@ -696,92 +837,110 @@
                     </div>
                 </div>
 
+                <!-- third quiz -->
+
                 <div class="card-grid" onclick="location.href='#';" style="cursor:pointer;">
                     <div class="grid-item">
                         <img src="movie.jpg" alt=".">
                     </div>
-
                     <div class="grid-item">
                         <p>What movie should you watch next?</p>
                     </div>
                 </div>
 
-                <div class="card-grid onclick=" location.href='#' ;" style="cursor:pointer;"">
+                <!-- fourth quiz -->
+
+                <div class="card-grid" onclick="location.href='#';" style="cursor:pointer;">
                     <div class=" grid-item">
-                    <img src="top_bottom.jpg" alt=".">
+                        <img src="top_bottom.jpg" alt=".">
+                    </div>
+                    <div class="grid-item">
+                        <p>Are you a top or a bottom?</p>
+                    </div>
                 </div>
+            </div>
 
-                <div class="grid-item">
-                    <p>Are you a top or a bottom?</p>
+            <!-- list of categories in third col -->
+
+            <div>
+                <h2 class="sub-heading">Story Genres</h2>
+
+                <div class="categoriesTable">
+                    <a href="#">Action</a>
+                    <a href="#">Adventure</a>
+                    <a href="#">Romance</a>
+                    <a href="#">Long </a>
+                    <a href="#">Historical</a>
+                    <a href="#">Horror</a>
+                    <a href="#">Humour</a>
+                    <a href="#">Mystery</a>
+                    <a href="#">Nonfiction</a>
+                    <a href="#">Poetry</a>
+                    <a href="#">Realistic</a>
+                    <a href="#">Fantasy</a>
+                    <a href="#">Fanfiction</a>
+                    <a href="#">Thriller</a>
+                    <a href="#">Challenge</a>
+                    <a href="#">Countries</a>
+                    <a href="#">Science fiction</a>
+                    <a href="#">Short stories</a>
+                </div>
+            </div>
+
+            <!-- button for creating quiz -->
+
+            <div class="sub-heading ">
+                <button class="create-quiz">Create Quiz</button>
+            </div>
+
+            <!-- list of tags in third col -->
+
+            <div>
+                <h2 class="sub-heading">Popular Tags</h2>
+                <div class="categoriesTable">
+                    <a href="#">Girls</a>
+                    <a href="#">Friends</a>
+                    <a href="#">Fun</a>
+                    <a href="#">Teens</a>
+                    <a href="#">Love</a>
+                    <a href="#">Personality</a>
+                    <a href="#">Food</a>
+                    <a href="#">History</a>
+                    <a href="#">Name</a>
+                    <a href="#">Generator</a>
+                    <a href="#">Character</a>
+                    <a href="#">Lifestyle</a>
+                    <a href="#">Religion</a>
+                    <a href="#">Music</a>
+                    <a href="#">Style</a>
+                    <a href="#">Animals</a>
+                    <a href="#">Knowledge</a>
+                    <a href="#">Pets</a>
+                    <a href="#">Tradition</a>
+                    <a href="#">Life</a>
+                    <a href="#">Literature</a>
+                    <a href="#">Fashion</a>
+                    <a href="#">Family</a>
                 </div>
             </div>
         </div>
 
-        <div>
-            <h2 class="sub-heading">Story Genres</h2>
-            <div class="categoriesTable">
-                <a href="#">Action</a>
-                <a href="#">Adventure</a>
-                <a href="#">Romance</a>
-                <a href="#">Long </a>
-                <a href="#">Historical</a>
-                <a href="#">Horror</a>
-                <a href="#">Humour</a>
-                <a href="#">Mystery</a>
-                <a href="#">Nonfiction</a>
-                <a href="#">Poetry</a>
-                <a href="#">Realistic</a>
-                <a href="#">Fantasy</a>
-                <a href="#">Fanfiction</a>
-                <a href="#">Thriller</a>
-                <a href="#">Challenge</a>
-                <a href="#">Countries</a>
-                <a href="#">Science fiction</a>
-                <a href="#">Short stories</a>
-            </div>
-        </div>
-
-        <div class="sub-heading ">
-            <button class="create-quiz">Create Quiz</button>
-        </div>
-
-        <div>
-            <h2 class="sub-heading">Popular Tags</h2>
-            <div class="categoriesTable">
-                <a href="#">Girls</a>
-                <a href="#">Friends</a>
-                <a href="#">Fun</a>
-                <a href="#">Teens</a>
-                <a href="#">Love</a>
-                <a href="#">Personality</a>
-                <a href="#">Food</a>
-                <a href="#">History</a>
-                <a href="#">Name</a>
-                <a href="#">Generator</a>
-                <a href="#">Character</a>
-                <a href="#">Lifestyle</a>
-                <a href="#">Religion</a>
-                <a href="#">Music</a>
-                <a href="#">Style</a>
-                <a href="#">Animals</a>
-                <a href="#">Knowledge</a>
-                <a href="#">Pets</a>
-                <a href="#">Tradition</a>
-                <a href="#">Life</a>
-                <a href="#">Literature</a>
-                <a href="#">Fashion</a>
-                <a href="#">Family</a>
-            </div>
-        </div>
-        </div>
+        <!-- last blank column in main section -->
 
         <div class="grid-item" id="blank2"></div>
 
     </section>
 
+    <!-- footer of page -->
+
     <footer>
         <div class="footer-grid">
+
+            <!-- blank col of footer -->
+
             <div class="grid-item"></div>
+
+            <!-- first row of footer -->
 
             <div class="grid item">
                 <div class="footer-links">
@@ -797,17 +956,25 @@
                     |
                     <a href="#">Cookie Policy</a>
                 </div>
+
+                <!-- second row of footer -->
+
                 <div class="copyright-link">
                     <a href="#">quizony.com </a>
                     <i class="far fa-copyright">
-                        <span>2021. All Rights Reserved.</span> 
+                        <span>2021. All Rights Reserved.</span>
                     </i>
                 </div>
             </div>
 
+            <!-- blank col of footer -->
+
             <div class="grid-item"></div>
+
         </div>
+
     </footer>
+
 </body>
 
 </html>
